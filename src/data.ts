@@ -99,44 +99,6 @@ export const coursework = [
   }
 ];
 
-export const workExperiences = [
-  {
-    position: "Backend Software Engineer Intern",
-    company: "Agoda",
-    url: "https://careersatagoda.com/",
-    years: ["June 2024", "July 2024"],
-    details: [
-      "Technologies used: GitLab CI/CD, Nginx, Scala, Play Framework, MSSQL",
-      "Migrated Finance Backoffice from Cspider VMs to PrivateCloud",
-      "Migrated Generic Adjustment tool's scenarios data source from Hadoop to MSSQL",
-      "Assessed the technical feasibility of integrating the Devstack internal tool into finance department repositories.",
-    ],
-  },
-  {
-    position: "Backend Developer",
-    company: "Information System Development, Student Government",
-    url: "https://isd.sgcu.in.th/",
-    years: ["December 2023", "Present"],
-    details: [
-      "Technologies used: Go, GORM, PostgreSQL, Redis, S3, Docker, Kubernetes, gRPC, GitOps",
-      "Led the development of the Freshy Orientation Web API for the Student Government (production 7,000 users)",
-      "Led the development of Pet Adoption Web API for the Animal Welfare Club",
-      "Initiated the backend onboarding process for new club members",
-    ],
-  },
-  {
-    position: "Fullstack Software Engineer Intern",
-    company: "Agoda",
-    url: "https://careersatagoda.com/",
-    years: ["June 2023", "October 2023"],
-    details: [
-      "Technologies used: React, Redux, TypeScript, Jest, .NET, NUnit, MSSQL, Grafana",
-      "Experimented with new features using A/B testing, measurements, and element tracking for thousands of users",
-      "Delivered features that serve tens of thousands of property owners",
-      "Created real-time dashboards for monitoring user behavior using Grafana, Superset (SQL)",
-    ],
-  },
-];
 
 export const activities = [
   {
@@ -171,7 +133,7 @@ export const projects = [
     stack: "Vue.js, TailwindCSS, DaisyUI, JavaScript",
     details:
       "A to-do list app built with Vue.js to manage user interactions and app state, integrated with MockAPI to simulate a backend for real-time task storage and persistence without the need for a full server setup.",
-    url: "",
+    url: "todo-qeerser.vercel.app",
     github: "github.com/Qeerser/Vue-todo",
   },
   { 
