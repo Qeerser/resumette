@@ -1,6 +1,5 @@
 <script lang="ts">
   import Intro from "./components/Intro.svelte";
-  import Work from "./components/Work.svelte";
   import HideToggle from "./HideToggle.svelte";
   import {
     educations,
@@ -8,10 +7,11 @@
     introData,
     projects,
     activities,
-    certs,
     sourceLink,
     technologies,
-    workExperiences,
+    interests,
+    coursework,
+    objective,
   } from "./data";
 
   let editMode = false;
@@ -36,7 +36,7 @@
   <p>
     Printer-friendly standard résumé template by
     <a href="https://github.com/narze/resume">narze</a> (used
-    <a href="https://github.com/Leomotors/resumette">Leomotor</a>'s version of
+    <a href="https://github.com/bookpanda/resumette">bookpanda</a>'s version of
     the template), any HTML tags with
     <code>web-only</code> CSS class will be hidden on print.
   </p>
@@ -54,6 +54,21 @@
     : 'display-mode'}"
 >
   <Intro {...introData} />
+
+  <section>
+    <HideToggle />
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Objective</h2>
+    <hr />
+
+    <ul>
+      {#each objective as obj}
+        <li>
+          <HideToggle />
+          {obj.detail}
+        </li>
+      {/each}
+    </ul>
+  </section>
 
   <section>
     <HideToggle />
@@ -84,16 +99,6 @@
 
   <section>
     <HideToggle />
-    <h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
-    <hr />
-
-    {#each workExperiences as exp}
-      <Work {...exp} />
-    {/each}
-  </section>
-
-  <section>
-    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
     <hr />
 
@@ -109,21 +114,17 @@
 
   <section>
     <HideToggle />
-    <h2 class="text-2xl print:text-4xl uppercase text-left">Certifications</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Related Coursework (As of November2024)</h2>
     <hr />
 
-    <div class="flex">
-      {#each certs as cert}
-        <HideToggle />
-        <a href={cert.url} target="_blank">
-          <img
-            alt="aws"
-            src={cert.image}
-            class="print:h-20 print:w-20 h-28 w-28"
-          />
-        </a>
+    <ul>
+      {#each coursework as course}
+        <li>
+          <HideToggle />
+          <strong>{course.head}</strong>, {course.details}
+        </li>
       {/each}
-    </div>
+    </ul>
   </section>
 
   <section>
@@ -169,12 +170,29 @@
     </ul>
   </section>
 
+  <section>
+    <HideToggle />
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+    <hr />
+    <ul>
+      {#each interests as interest}
+        <li>
+          <HideToggle />
+          {interest}
+        </li>
+      {/each}
+    </ul>
+  </section>
+
+
   <footer class="print-only">
     (See in <a href={fullVersionLink} target="_blank" rel="noopener">web</a>
     for a more updated version or view
     <a href={sourceLink} target="_blank" rel="noopener">source code</a>)
   </footer>
 </main>
+
+
 
 <style lang="postcss">
   main {

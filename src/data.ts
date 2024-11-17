@@ -1,88 +1,102 @@
-export const fullVersionLink = "https://resume.bookpanda.dev";
-export const sourceLink = "https://github.com/bookpanda/resumette";
-import { default as cloudPractitioner } from "./certs/cloud-practitioner.png";
+export const fullVersionLink = "";
+export const sourceLink = "https://github.com/Qeerser/resumette";
 
 export const introData = {
-  name: "Idhibhat Pankam",
+  name: "Kanpasit Pothebungkarn",
   jobTitle: "Fullstack Software Engineer",
   phone: import.meta.env.DEV ? import.meta.env.VITE_PHONE : "",
   email: import.meta.env.DEV ? import.meta.env.VITE_EMAIL : "",
-  github: "bookpanda",
-  linkedin: "idhibhat-pankam",
+  github: "Qeerser",
+  linkedin: "kanpasit-pothebungkarn",
   location: "Bangkok, Thailand",
-  website: "bookpanda.dev",
+  website: "",
 };
+
+export const objective = [
+  { detail:'I am seeking a challenging position to enhance my coding skills. While I may lack experience and have much to learn, I am eager to embrace new challenges and acquire knowledge that will help me grow in many areas. I am fully committed to contributing to the development of various systems.'
+  }]
 
 export const technologies = [
   {
     section: "Languages",
     details: [
-      "Go",
-      "C#",
-      "TypeScript",
-      "Node.js",
-      "Python",
-      "Java",
       "C++",
+      "Python",     
+      "JavaScript",
+      "TypeScript",
       "SQL",
-      "日本語 (N2)",
+      "Go",
+      "Java",
+      "Node.js",
+      "Scala",
     ],
   },
   {
     section: "Fullstack",
     details: [
       "React",
-      "Redux",
-      "tailwindcss",
-      "shadcnUI",
-      "ASP.NET Core",
-      "gin",
+      "Next.js",
+      "Vue.js",
+      "TailwindCSS, ",
       "GORM",
-      "Redis",
-      "S3",
+      "DaisyUI",
     ],
-  },
-  {
-    section: "Technologies",
-    details: [
-      "REST",
-      "GraphQL",
-      "gRPC",
-      "CI/CD",
-      "microservices",
-      "clean architecture",
-      "TDD",
-      "system design",
-      "JWT",
-      "OAuth",
-      "caching",
-      "metrics",
-    ],
-  },
-  {
-    section: "IaaS, PaaS",
-    details: ["AWS", "Docker", "Kubernetes", "Vercel", "Cloudflare", "Contabo"],
   },
   {
     section: "Tools",
     details: [
       "Git",
       "Postman",
-      "DBeaver",
-      "Portainer",
-      "Lens",
-      "Prometheus",
-      "Grafana",
+      "VSCode",
+      "Eclipse"
+      
     ],
   },
+  {
+    section: "Database",
+    details: ["MySQL","PostgreSQL","MongoDB","DynamoDB"],
+  }
+  ,
+  {
+    section: "Other",
+    details: ["AWS", "Docker", "Vercel","GitHub Action"],
+  }
 ];
 
 export const educations = [
   {
+    head: "Princess Chulabhorn Science High School Loei (Middle School)",
+    details:
+      "B.Eng. Computer Engineering, 2016-2019 (GPAX 3.89)",
+  },
+  {
+    head: "Princess Chulabhorn Science High School Loei (High School)",
+    details:
+      "B.Eng. Computer Engineering, 2019-2022 (GPAX 3.92)",
+  },
+  {
     head: "Chulalongkorn University",
     details:
-      "B.Eng. Computer Engineering, 2022-Present (Expected May 2026) (GPAX 3.88)",
+      "B.Eng. Computer Engineering, 2022-Present (Expected May 2026) (GPAX 3.54)",
   },
+];
+
+export const coursework = [
+  {
+    head: "Programming & Software Development",
+    details:
+      "Computer Programming,  Algorithm Design, Programming Methodology, Programming Language Principles, Software Engineering",
+  },
+  {
+    head: "Data Structures & Systems",
+    details:
+      "Introduction to Data Structure, Embedded System, Database System, Software Engineering, Computer System Architectures",
+  },
+  {
+    head: "Other",
+    details:
+      "Bioinformatics, Introduction to Digital lmaging, ",
+  }
 ];
 
 export const workExperiences = [
@@ -126,66 +140,68 @@ export const workExperiences = [
 
 export const activities = [
   {
-    name: "JSCCE 2023 (The 20th International Joint Conference on Computer Science and Software Engineering) (2023)",
+    name: "22th Larngear Camp (2023)",
     details:
-      "Published 'Two-stage Thai Misspelling Correction based on Pre-trained Language Models', won the Best Presentation Award at the conference.",
+      "Introduction camp to the world of Engineering for high school students, organized by the Faculty of Engineering, Chulalongkorn University. I volunteered as staff.",
+  },
+  {
+    name: "21th & 22th FunFueng Camp (2022,2023)",
+    details:
+      "Introduction camp to inspire high school students in rural areas about education and future studies, organized by the Faculty of Engineering, Chulalongkorn University. I volunteered as staff.",
+  },
+  {
+    name: "52th & 53th Voluntary Engineering Student Camp (VESC) (2023,2024)",
+    details:
+      "A community service camp organized by the Engineering Student Club at Chulalongkorn University. It aims to contribute to society through development projects that combine engineering knowledge with social service. I volunteered as member.",
   },
 ];
 
 export const projects = [
-  {
-    name: "Freshy Orientation Web API (production 7,000 users)",
-    stack: "Go, Gin, gRPC, Redis, PostgreSQL, S3, Prometheus, Grafana",
+  { 
+    name: "Todo List Manager",
+ 
+    stack: "React, TypeScript, TailwindCSS, DaisyUI",
     details:
-      "Freshmen orientation registration, group matching, and score tally web app",
-    url: "github.com/isd-sgcu/rpkm67-gateway",
-    github: "github.com/isd-sgcu/rpkm67-backend",
+      "A to-do list app built with React and TypeScript, replicating the same functionality as a Vue.js version",
+    url: "",
+    github: "github.com/Qeerser/Todo-React-TS",
   },
-  {
-    name: "Pet Adoption Web API",
-    stack: "Go, fiber, gRPC, Redis, PostgreSQL, Minio",
-    details: "Animal Welfare Club 'Johnjud' web app for adopting club's pets",
-    url: "johnjud.com",
-    github: "github.com/isd-sgcu/johnjud-backend",
-  },
-  {
-    name: "Single Sign-On Implementation",
-    stack: "Go, PostgreSQL, ASP.NET Core, Redis, React, TypeScript",
+  { 
+    name: "To-Do List Web App",
+    stack: "Vue.js, TailwindCSS, DaisyUI, JavaScript",
     details:
-      "2 services with internal JWT auth connected to CAS to simulate SSO",
-    url: "sso-cas.bookpanda.dev",
-    github: "github.com/bookpanda/sso-cas",
+      "A to-do list app built with Vue.js to manage user interactions and app state, integrated with MockAPI to simulate a backend for real-time task storage and persistence without the need for a full server setup.",
+    url: "",
+    github: "github.com/Qeerser/Vue-todo",
   },
-  {
-    name: "Discord RAG Bot",
-    stack: "Python, TypeScript, Langchain, discordjs, fastapi",
-    details: "Microsoft RAG Hackathon project submission",
-    url: "github.com/seg-org/rag-bot",
-    github: "github.com/seg-org/rag-api",
-  },
-  {
-    name: "Course Assignments Sharing Platform",
-    stack:
-      "TypeScript, ASP.NET, Chrome Extension, Firestore, React, Redux, Redis",
+  { 
+    name: "User Management Web App",
+    stack: "HTML, JavaScript, CSS, ExpressJS, PostgreSQL",
     details:
-      "1-click assignment solutions sharing, removing the burden of taking answer screenshots",
-    url: "ourcourseville.vercel.app",
-    github: "github.com/bookpanda/ourcourseville",
+      "Implemented full CRUD operations using Express.js for backend routing and PostgreSQL for data storage and retrieval.",
+    url: "",
+    github: "github.com/Qeerser/Vanilla-Web-Reg",
   },
-  {
-    name: "Spotify Lyrics to Anki Cards Web App",
-    stack:
-      "React, TypeScript, AWS Lambda, Python, Spotify API, Azure Translator",
+  { 
+    name: "Programming Methodology Final Project — May 2023",
+    stack: "Java JavaFX",
     details:
-      "Makes Japanese Anki cards from ANY Spotify lyrics by tokenization and translation",
-    url: "lyrics2anki.bookpanda.dev",
-    github: "github.com/bookpanda/Lyrics2Anki",
+      "Implemented a game as a final project using Java. The project included the knowledge of the uses of OOP and JavaFX",
+    url: "",
+    github: "github.com/Qeerser/Progmeth-project",
+  },
+  { 
+    name: "Computer Engineering Essentials Project — April 2023",
+    stack: "HTML, JavaScript, CSS, ExpressJS, DynamoDB",
+    details:
+      "Collaborated with a team to develop a fully functional website using HTML, JavaScript, and DynamoDB, demonstrating proficiency in REST APIs, frontend, and backend development.",
+    url: "",
+    github: "github.com/khajornritdacha/CEE-Final-Project-G2",
   },
 ];
 
-export const certs = [
-  {
-    image: cloudPractitioner,
-    url: "https://www.credly.com/badges/3cc5547a-7c07-46a7-817f-7cd346df3c7e/public_url",
-  },
-];
+export const interests = [
+  	'Areas :  Anime , Manhwa , Basketball',
+    "Games: RPG, Sandbox, MOBA, FPS "
+ ];
+
