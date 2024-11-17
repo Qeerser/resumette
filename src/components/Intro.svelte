@@ -35,7 +35,7 @@
     </p>
     <p>
       <a href="https://{website}" target="_blank" rel="noreferrer">
-        {website}
+        Website
       </a>
     </p>
     <p>

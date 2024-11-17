@@ -1,4 +1,4 @@
-export const fullVersionLink = "";
+export const fullVersionLink = "https://resume-qeerser.vercel.app/";
 export const sourceLink = "https://github.com/Qeerser/resumette";
 
 export const introData = {
@@ -9,7 +9,7 @@ export const introData = {
   github: "Qeerser",
   linkedin: "kanpasit-pothebungkarn",
   location: "Bangkok, Thailand",
-  website: "",
+  website: "qeerser.vercel.app",
 };
 
 export const objective = [
@@ -150,7 +150,7 @@ export const activities = [
       "Introduction camp to inspire high school students in rural areas about education and future studies, organized by the Faculty of Engineering, Chulalongkorn University. I volunteered as staff.",
   },
   {
-    name: "52th & 53th Voluntary Engineering Student Camp (VESC) (2023,2024)",
+    name: "51th & 52th Voluntary Engineering Student Camp (VESC) (2023,2024)",
     details:
       "A community service camp organized by the Engineering Student Club at Chulalongkorn University. It aims to contribute to society through development projects that combine engineering knowledge with social service. I volunteered as member.",
   },
@@ -202,6 +202,6 @@ export const projects = [
 
 export const interests = [
   	'Areas :  Anime , Manhwa , Basketball',
-    "Games: RPG, Sandbox, MOBA, FPS "
+    "Games: RPG, Sandbox, MOBA, FPS ",
  ];
 
