@@ -114,7 +114,7 @@
 
   <section>
     <HideToggle />
-    <h2 class="text-2xl print:text-4xl uppercase text-left">Related Coursework (As of November2024)</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Related Coursework (As of December 2024)</h2>
     <hr />
 
     <ul>

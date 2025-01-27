@@ -35,9 +35,11 @@ export const technologies = [
     section: "Fullstack",
     details: [
       "React",
+      "Redux",
       "Next.js",
       "Vue.js",
       "TailwindCSS, ",
+      "Fiber",
       "GORM",
       "DaisyUI",
     ],
@@ -77,7 +79,7 @@ export const educations = [
   {
     head: "Chulalongkorn University",
     details:
-      "B.Eng. Computer Engineering, 2022-Present (Expected May 2026) (GPAX 3.54)",
+      "B.Eng. Computer Engineering, 2022-Present (Expected May 2026) (GPAX 3.61)",
   },
 ];
 
